@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cadastro</title>
+</head>
+<body>
+    <fieldset>
+        <legend>Cadastro</legend>
+        <form action="/cadastro" method="POST">
+            <label for="nome">Nome:</label>
+            <input type="text" name="nome" id="nome" required>
+            <br>
+            <label for="email">Email:</label>
+            <input type="email" name="email" id="email" required>
+            <br>
+            <label for="senha">Senha:</label>
+            <input type="password" name="senha" id="senha" required>
+            <br>
+            <label for="confirmaSenha">Confirme a senha:</label>
+            <input type="password" name="confirmaSenha" id="confirmaSenha" required>
+            <!-- if (senha !== confirmaSenha) {
+                alert('As senhas não conferem');
+            } -->
+            <br>
+            <button type="submit">Cadastrar</button>
+        </form>
+    </fieldset>
+</body>
+</html>
